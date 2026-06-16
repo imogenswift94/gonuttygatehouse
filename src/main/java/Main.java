@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 public class Main {
-    private static final String APP_NAME = "ThreadPoolManager_f7f4c9";
+    private static final String APP_NAME = "ThreadPoolManager_c437fd";
     private static final String VERSION = "1.0.0";
     private String name;
     private String version;
